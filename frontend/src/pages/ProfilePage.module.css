@@ -1,0 +1,48 @@
+.head {
+  margin-bottom: 1.25rem;
+}
+
+.h1 {
+  margin: 0;
+  font-size: 1.85rem;
+  font-weight: 800;
+  letter-spacing: -0.03em;
+  background: linear-gradient(135deg, var(--text) 50%, var(--gold) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.sub {
+  margin: 0.35rem 0 0;
+  color: var(--muted);
+}
+
+.card {
+  max-width: 480px;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 1.25rem;
+  box-shadow: var(--shadow);
+  display: flex;
+  flex-direction: column;
+  gap: 0.85rem;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  font-size: 0.95rem;
+}
+
+.k {
+  color: var(--muted);
+  font-weight: 500;
+}
+
+.v {
+  font-weight: 600;
+  text-align: right;
+  word-break: break-all;
+}

@@ -1,0 +1,247 @@
+.header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-bottom: 2rem;
+  flex-wrap: wrap;
+}
+
+.h1 {
+  margin: 0;
+  font-size: 1.85rem;
+  font-weight: 800;
+  letter-spacing: -0.03em;
+  background: linear-gradient(135deg, var(--text) 50%, var(--gold) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.sub {
+  margin: 0.35rem 0 0;
+  color: var(--muted);
+  max-width: 520px;
+}
+
+.cta {
+  padding: 0.75rem 1.25rem;
+  border-radius: 12px;
+  background: linear-gradient(135deg, var(--gold), #b88d3a);
+  color: #ffffff;
+  font-weight: 700;
+  border: none;
+  box-shadow: 0 4px 15px rgba(153, 114, 45, 0.2);
+  transition: all 0.2s ease;
+  font-size: 0.9rem;
+}
+
+.cta:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 6px 20px rgba(153, 114, 45, 0.35);
+  color: #ffffff;
+}
+
+.err {
+  color: var(--danger);
+  background: var(--danger-soft);
+  padding: 0.75rem 1rem;
+  border-radius: 8px;
+  border: 1px solid rgba(239, 68, 68, 0.2);
+  margin-bottom: 1.5rem;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+/* Luxury Visa Card */
+.visaCard {
+  background: linear-gradient(135deg, #1e2640 0%, #0d1222 100%);
+  border: 1px solid rgba(153, 114, 45, 0.25);
+  border-radius: var(--radius);
+  padding: 1.5rem;
+  box-shadow: var(--shadow-lg);
+  min-height: 180px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+  overflow: hidden;
+}
+
+.visaCard::before {
+  content: "";
+  position: absolute;
+  top: -50%;
+  right: -20%;
+  width: 250px;
+  height: 250px;
+  background: radial-gradient(circle, rgba(153, 114, 45, 0.08) 0%, transparent 70%);
+  pointer-events: none;
+}
+
+.cardTop {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.cardBrandName {
+  font-size: 0.75rem;
+  font-weight: 800;
+  letter-spacing: 0.15em;
+  color: var(--gold);
+}
+
+.cardChip {
+  width: 32px;
+  height: 24px;
+  background: linear-gradient(135deg, #ffe082 0%, #b28900 100%);
+  border-radius: 4px;
+  box-shadow: inset 0 1px 0 rgba(255,255,255,0.5);
+  margin-top: 0.5rem;
+}
+
+.cardVal {
+  font-size: 1.65rem;
+  font-weight: 700;
+  color: #fff;
+  letter-spacing: -0.01em;
+  margin: 1rem 0;
+}
+
+.cardBottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.cardHolder {
+  font-size: 0.75rem;
+  color: var(--muted);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.cardName {
+  font-weight: 700;
+  color: #fff;
+  margin-top: 0.15rem;
+}
+
+.cardType {
+  font-size: 0.95rem;
+  font-weight: 800;
+  color: var(--gold);
+  font-style: italic;
+}
+
+/* Metric Card */
+.metricCard {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 1.5rem;
+  box-shadow: var(--shadow);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.cardLabel {
+  font-size: 0.8rem;
+  color: var(--muted);
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.cardValue {
+  font-size: 1.85rem;
+  font-weight: 800;
+  margin-top: 0.5rem;
+  color: var(--text);
+  letter-spacing: -0.02em;
+}
+
+.cardHint {
+  margin-top: 0.75rem;
+  font-size: 0.8rem;
+  color: var(--muted);
+  line-height: 1.4;
+}
+
+.healthValue {
+  color: var(--accent);
+  font-weight: 800;
+}
+
+.mlHighlight {
+  color: var(--accent-2);
+  font-weight: 800;
+}
+
+.gaugeContainer {
+  margin-top: 0.5rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.gaugeBar {
+  flex: 1;
+  height: 8px;
+  background: rgba(0, 0, 0, 0.05);
+  border-radius: 4px;
+  overflow: hidden;
+  position: relative;
+}
+
+.gaugeFill {
+  height: 100%;
+  background: linear-gradient(90deg, var(--gold) 0%, var(--accent) 100%);
+  border-radius: 4px;
+}
+
+/* Charts Grid */
+.charts {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.panel {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 1.5rem;
+  box-shadow: var(--shadow);
+}
+
+.h2 {
+  margin: 0 0 1.25rem;
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: var(--text);
+  letter-spacing: -0.01em;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.chartBox {
+  min-height: 280px;
+}
+
+.empty {
+  color: var(--muted);
+  font-size: 0.95rem;
+  margin: 0;
+  padding: 4rem 0;
+  text-align: center;
+}
+
